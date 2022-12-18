@@ -28,8 +28,8 @@ export const makeZodI18nMap =
           });
         } else {
           message = t("zod:errors.invalid_type", {
-            expected: `$t(zod:types.${issue.expected})`,
-            received: `$t(zod:types.${issue.received})`,
+            expected: t('zod:types.${issue.expected}'),
+            received: t('zod:types.${issue.received}'),
             defaultValue: message,
           });
         }
